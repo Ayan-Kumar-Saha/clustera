@@ -1,10 +1,11 @@
+from dataset_builder import Dataset_Builder
 import requests
 import pandas as pd
 from utils import make_data_home, make_file_path, is_valid_path
 
 dataset_directory = 'clustera_datasets'
 
-class Leukemia10_Dataset_Builder:
+class Leukemia10_Dataset_Builder(Dataset_Builder):
 
     def __init__(self):
         self.name = 'leukemia-selected-10.csv'
